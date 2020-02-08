@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+<!--  <remote name="rpi" fetch="git://github.com/raspberrypi/" /> -->
+<!--  <remote name="rpi4-lineage"   fetch="https://gitlab.com/rpi-droid/rpi4/lineage" /> -->
+
+  <remote name="ubertc" fetch="https://gitlab.com/rpi4_android/toolchains" />
+
+  <remove-project name="android_frameworks_base" />
+  <project name="LG-G6-DEV/havoc_frameworks_base" path="frameworks/base" remote="github" revision="ten" />
+  
+  <remove-project name="platform/hardware/broadcom/libbt" />
+  <project name="LG-G6-DEV/hardware_broadcom_libbt" path="hardware/broadcom/libbt" remote="github" revision="poundcake-release" />
+  
+  <!-- custom toolchains for in-tree optimized kernel -->
+  <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-6.x-ubertc" name="aarch64-linux-android-6.x-ubertc" revision="x86_64" remote="ubertc" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-6.x-ubertc" name="arm-linux-androideabi-6.x-ubertc" revision="x86_64" remote="ubertc" />
+
+  <remove-project name="LG-G6-DEV/android_device_lge_us997" />
+  <project path="device/lge/us997" name="zefie/android_device_lge_us997" revision="havoc-ten" remote="github" />
+
+  <remove-project name="LG-G6-DEV/lge_msm8996" />
+  <project path="kernel/lge/msm8996" name="zefie/lge_g6_melina_kernel" revision="android-aosp" remote="github" />
+
+  <!-- remove unneeded (probably incomplete) -->
+  <remove-project name="platform/hardware/qcom/msm8960" />
+  <remove-project name="platform/hardware/qcom/msm8994" />
+  <remove-project name="platform/hardware/qcom/msm8998" />
+  <remove-project name="platform/hardware/qcom/msm8x09" />
+  <remove-project name="platform/hardware/qcom/msm8x26" />
+  <remove-project name="platform/hardware/qcom/msm8x27" />
+  <remove-project name="platform/hardware/qcom/msm8x84" />
+  <remove-project name="platform/hardware/ti/am57x" />
+  <remove-project name="platform/prebuilts/qemu-kernel" />
+  <remove-project name="platform/prebuilts/gcc/linux-x86/mips/mips64el-linux-android-4.9" />
+  <remove-project name="platform/prebuilts/android-emulator" />
+</manifest>
+
