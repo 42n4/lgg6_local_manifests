@@ -5,6 +5,8 @@
 
   <remote name="zefie-rpi4" fetch="https://gitlab.com/rpi4_android" />
 
+  <remove-project name="LG-G6-DEV/android_device_lge_g6-common" />
+  <project name="zefie/android_device_lge_g6-common" path="device/lge/g6-common" remote="github" revision="havoc-ten" />
 
   <remove-project name="android_frameworks_base" />
   <project name="zefie/havoc_frameworks_base" path="frameworks/base" remote="github" revision="ten" />
