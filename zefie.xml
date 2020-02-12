@@ -5,10 +5,12 @@
 
   <remote name="zefie-rpi4" fetch="https://gitlab.com/rpi4_android" />
 
-<!--
+
   <remove-project name="android_frameworks_base" />
-  <project name="LG-G6-DEV/havoc_frameworks_base" path="frameworks/base" remote="github" revision="ten" />
--->
+  <project name="zefie/havoc_frameworks_base" path="frameworks/base" remote="github" revision="ten" />
+
+  <remove-project name="android_system_core" />
+  <project name="zefie/android_system_core" path="system/core" remote="github" revision="ten" />
   
   <remove-project name="platform/hardware/broadcom/libbt" />
   <project name="LG-G6-DEV/hardware_broadcom_libbt" path="hardware/broadcom/libbt" remote="github" revision="poundcake-release" />
