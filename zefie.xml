@@ -29,6 +29,9 @@
   <remove-project name="platform/hardware/broadcom/libbt" />
   <project name="LG-G6-DEV/hardware_broadcom_libbt" path="hardware/broadcom/libbt" remote="github" revision="poundcake-release" />
   
+  <!-- bcm fm radio -->
+  <project path="hardware/broadcom/fm" name="LineageOS/android_hardware_broadcom_fm" revision="lineage-17.1" remote="github" />
+
   <!-- custom toolchains for in-tree optimized kernel -->
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-6.x-ubertc" name="toolchains/aarch64-linux-android-6.x-ubertc" revision="x86_64" remote="zefie-rpi4" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-6.x-ubertc" name="toolchains/arm-linux-androideabi-6.x-ubertc" revision="x86_64" remote="zefie-rpi4" />
@@ -43,6 +46,7 @@
   <project path="vendor/opengapps/sources/all" name="all" clone-depth="1" revision="master" remote="oga-gitlab" />
   <project path="vendor/opengapps/sources/arm" name="arm" clone-depth="1" revision="master" remote="oga-gitlab" />
   <project path="vendor/opengapps/sources/arm64" name="arm64" clone-depth="1" revision="master" remote="oga-gitlab" />
+
 
 
   <!-- remove unneeded (probably incomplete) -->
