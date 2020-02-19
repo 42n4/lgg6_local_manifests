@@ -43,6 +43,7 @@
   <project path="zefie" name="zefie_abs_helper" revision="generic" remote="zefie-rpi4" />
 
 
+<!--
   <remove-project name="android_vendor_gapps" />
   <remote name="opengapps" fetch="https://github.com/opengapps/"  />
   <remote name="oga-gitlab" fetch="https://gitlab.opengapps.org/opengapps/"  />
@@ -50,7 +51,7 @@
   <project path="vendor/opengapps/sources/all" name="all" clone-depth="1" revision="master" remote="oga-gitlab" />
   <project path="vendor/opengapps/sources/arm" name="arm" clone-depth="1" revision="master" remote="oga-gitlab" />
   <project path="vendor/opengapps/sources/arm64" name="arm64" clone-depth="1" revision="master" remote="oga-gitlab" />
-
+-->
 
 
   <!-- remove unneeded (probably incomplete) -->
