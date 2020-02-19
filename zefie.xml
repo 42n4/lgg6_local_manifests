@@ -5,6 +5,9 @@
 
   <remote name="zefie-rpi4" fetch="https://gitlab.com/rpi4_android" />
 
+
+  <remove-project name="android_vendor_codeaurora_telephony" />
+
   <remove-project name="LG-G6-DEV/android_device_lge_msm8996-common" />
   <project name="zefie/android_device_lge_msm8996-common" path="device/lge/msm8996-common" remote="github" revision="lineage-17.0" />
 
