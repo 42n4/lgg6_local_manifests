@@ -40,13 +40,15 @@
   <!-- bcm fm radio (disabled because qcom fm works better) -->
 <!--  <project path="hardware/broadcom/fm" name="LineageOS/android_hardware_broadcom_fm" revision="lineage-17.1" remote="github" /> -->
 
+<!-- opengapps -->
+<!--
   <remote name="opengapps" fetch="https://github.com/opengapps/"  />
   <remote name="oga-gitlab" fetch="https://gitlab.opengapps.org/opengapps/"  />
   <project path="vendor/opengapps/build" name="aosp_build" revision="master" remote="opengapps" />
   <project path="vendor/opengapps/sources/all" name="all" clone-depth="1" revision="master" remote="oga-gitlab" />
   <project path="vendor/opengapps/sources/arm" name="arm" clone-depth="1" revision="master" remote="oga-gitlab" />
   <project path="vendor/opengapps/sources/arm64" name="arm64" clone-depth="1" revision="master" remote="oga-gitlab" />
-
+-->
 
   <!-- remove unneeded (probably incomplete) -->
   <remove-project name="platform/hardware/qcom/msm8960" />
