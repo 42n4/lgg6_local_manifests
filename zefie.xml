@@ -9,35 +9,35 @@
 
   <!-- zefue customized lge "msm8996-common" -->
   <remove-project name="LG-G6-DEV/android_device_lge_msm8996-common" />
-  <project name="zefie/android_device_lge_msm8996-common" path="device/lge/msm8996-common" remote="github" revision="lineage-17.0" />
+  <project name="zefie/android_device_lge_msm8996-common" path="device/lge/msm8996-common" remote="github" revision="lineage-17.1" />
 
   <!-- zefie customized g6-common tree (needed for Melina support) -->
   <remove-project name="LG-G6-DEV/android_device_lge_g6-common" />
-  <project name="zefie/android_device_lge_g6-common" path="device/lge/g6-common" remote="github" revision="havoc-ten" />
+  <project name="zefie/android_device_lge_g6-common" path="device/lge/g6-common" remote="github" revision="lineage-17.1" />
 
   <!-- zefie customized US997 device tree -->
   <remove-project name="LG-G6-DEV/android_device_lge_us997" />
-  <project path="device/lge/us997" name="zefie/android_device_lge_us997" revision="havoc-ten" remote="github" />
+  <project path="device/lge/us997" name="zefie/android_device_lge_us997" remote="github" revision="lineage-17.1" />
 
   <!-- zefie override Proprietary Blobs repo -->
   <remove-project name="LG-G6-DEV/proprietary_vendor_lge" />
-  <project name="zefie/proprietary_vendor_lge" path="vendor/lge" remote="github" revision="lineage-17.0" />
+  <project name="zefie/proprietary_vendor_lge" path="vendor/lge" remote="github" revision="lineage-17.1" />
   
   <!-- Melina Reborn Kernel -->
   <remove-project name="LG-G6-DEV/lge_msm8996" />
-  <project path="kernel/lge/msm8996" name="zefie/lge_g6_melina_kernel" revision="android-aosp" remote="github" />
+  <project path="kernel/lge/msm8996" name="zefie/lge_g6_melina_kernel" remote="github" revision="android-aosp" />
 
   <!-- bluetooth workaround -->
   <remove-project name="platform/hardware/broadcom/libbt" />
   <project name="LG-G6-DEV/hardware_broadcom_libbt" path="hardware/broadcom/libbt" remote="github" revision="poundcake-release" />
   
-  <!-- custom toolchains for in-tree optimized kernel -->
-  <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-6.x-ubertc" name="toolchains/aarch64-linux-android-6.x-ubertc" revision="x86_64" remote="zefie-rpi4" />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-6.x-ubertc" name="toolchains/arm-linux-androideabi-6.x-ubertc" revision="x86_64" remote="zefie-rpi4" />
-
   <!-- ./zefie/build_android.sh automation helper -->  
   <remote name="zefie-rpi4" fetch="https://gitlab.com/rpi4_android" />
   <project path="zefie" name="zefie_abs_helper" revision="generic" remote="zefie-rpi4" />
+
+  <!-- custom toolchains for in-tree optimized kernel -->
+  <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-6.x-ubertc" name="toolchains/aarch64-linux-android-6.x-ubertc" revision="x86_64" remote="zefie-rpi4" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-6.x-ubertc" name="toolchains/arm-linux-androideabi-6.x-ubertc" revision="x86_64" remote="zefie-rpi4" />
 
   <!-- bcm fm radio (disabled because qcom fm works better) -->
 <!--  <project path="hardware/broadcom/fm" name="LineageOS/android_hardware_broadcom_fm" revision="lineage-17.1" remote="github" /> -->
