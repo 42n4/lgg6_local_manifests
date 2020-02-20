@@ -2,8 +2,10 @@
 <manifest>
 
   <!-- zefie override vendor/codeaurora/telehony (for possible IMS testing) -->
+<!--
   <remove-project name="android_vendor_codeaurora_telephony" />
   <project name="zefie/android_vendor_codeaurora_telephony" path="vendor/codeaurora/telephony" remote="github" revision="msm8996" />
+-->
 
   <!-- zefue customized lge "msm8996-common" -->
   <remove-project name="LG-G6-DEV/android_device_lge_msm8996-common" />
