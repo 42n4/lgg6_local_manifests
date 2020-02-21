@@ -10,19 +10,19 @@
   <project name="zefie/android_vendor_codeaurora_telephony" path="vendor/codeaurora/telephony" remote="github" revision="msm8996" />
 
   <remove-project name="LG-G6-DEV/android_device_lge_msm8996-common" />
-  <project name="zefie/android_device_lge_msm8996-common" path="device/lge/msm8996-common" remote="github" revision="lineage-17.0" />
+  <project name="zefie/android_device_lge_msm8996-common" path="device/lge/msm8996-common" remote="github" revision="lineage-17.1" />
 
   <remove-project name="LG-G6-DEV/android_device_lge_g6-common" />
-  <project name="zefie/android_device_lge_g6-common" path="device/lge/g6-common" remote="github" revision="havoc-ten" />
+  <project name="zefie/android_device_lge_g6-common" path="device/lge/g6-common" remote="github" revision="lineage-17.1" />
 
   <remove-project name="LG-G6-DEV/android_device_lge_us997" />
-  <project path="device/lge/us997" name="zefie/android_device_lge_us997" revision="havoc-ten" remote="github" />
+  <project path="device/lge/us997" name="zefie/android_device_lge_us997" remote="github" revision="lineage-17.1" />
 
   <remove-project name="LG-G6-DEV/lge_msm8996" />
   <project path="kernel/lge/msm8996" name="zefie/lge_g6_melina_kernel" revision="android-aosp" remote="github" />
 
   <remove-project name="LG-G6-DEV/proprietary_vendor_lge" />
-  <project name="zefie/proprietary_vendor_lge" path="vendor/lge" remote="github" revision="lineage-17.0" />
+  <project name="zefie/proprietary_vendor_lge" path="vendor/lge" remote="github" revision="lineage-17.1" />
 
   <remove-project name="android_frameworks_base" />
   <project name="zefie/havoc_frameworks_base" path="frameworks/base" remote="github" revision="ten" />
